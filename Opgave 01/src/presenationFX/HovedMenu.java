@@ -153,7 +153,7 @@ public class HovedMenu extends Application {
 		Label label5 = new Label("Find Ven eller bekendt");
 		Button btnBack4 = new Button("Tilbage");
 		Button btnSøg = new Button("Søg");
-		Label findtext = new Label("Indtast email her");
+		Label findtext = new Label("Indtast oplysninger her");
 		Label findVen = new Label("");
 		TextField søg = new TextField();
 		søg.setMaxWidth(200);
