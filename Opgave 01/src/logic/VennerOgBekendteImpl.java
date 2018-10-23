@@ -5,8 +5,10 @@ import java.lang.reflect.Array;
 import data.VenContainer;
 
 public class VennerOgBekendteImpl implements VennerOgBekendte {
+	
+	private static VenContainer venner = new VenContainer();
 
-	private VenContainer venner = new VenContainer();
+	//private VenContainer venner = new VenContainer();
 
 	@Override
 	public boolean opret(Ven ven) {
@@ -21,14 +23,27 @@ public class VennerOgBekendteImpl implements VennerOgBekendte {
 
 	@Override
 	public boolean opdater(Ven ven) {
-		// TODO Auto-generated method stub
 		return false;
+////		public boolean opdater(Ven ven) {
+////			for (int i=0; i < venner.size(); i++) {
+////				Ven glven = venner.getElement(i);
+////				if (glven.getEmail().equals(ven.getEmail())) {
+////					venner.replaceElement(i, ven);
+////				}
+////			}
+////		}
 	}
 
-	@Override
+//	@Override
 	public boolean slet(String email) {
-		// TODO Auto-generated method stub
 		return false;
+//			for (int i=0; i < venner.size(); i++) {
+//				Ven glven = venner.getElement(i);
+//				if (glven.getEmail().equals(email)) {
+//					venner.removeElement(i);
+//				}
+//			}
+//		}
 	}
 
 	@Override
